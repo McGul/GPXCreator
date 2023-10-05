@@ -1,0 +1,835 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5217F1F32AC6D96100F1A258 /* HCMatrixObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5217F1F12AC6D96000F1A258 /* HCMatrixObject.swift */; };
+		5217F1F42AC6D96100F1A258 /* HCKalmanAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5217F1F22AC6D96000F1A258 /* HCKalmanAlgorithm.swift */; };
+		5217F1F72AC6D9C200F1A258 /* Surge in Frameworks */ = {isa = PBXBuildFile; productRef = 5217F1F62AC6D9C200F1A258 /* Surge */; };
+		5217F1FA2AC75A5000F1A258 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5217F1F92AC75A5000F1A258 /* Settings.swift */; };
+		5217F1FC2AC75E8500F1A258 /* DetectOrientatuib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5217F1FB2AC75E8500F1A258 /* DetectOrientatuib.swift */; };
+		5217F1FE2AC75EB200F1A258 /* UIView+Orientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5217F1FD2AC75EB200F1A258 /* UIView+Orientation.swift */; };
+		5217F2012AC76CB400F1A258 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5217F2002AC76CB400F1A258 /* AppSettings.swift */; };
+		5217F2032AC7731200F1A258 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5217F2022AC7731200F1A258 /* SettingsViewModel.swift */; };
+		5217F2052AC784DD00F1A258 /* MapStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5217F2042AC784DD00F1A258 /* MapStyle.swift */; };
+		5234E3712AC5DBF000927178 /* LocationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5234E3702AC5DBF000927178 /* LocationInfo.swift */; };
+		5234E3742AC620D100927178 /* BottomMapToolBarMapPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5234E3732AC620D100927178 /* BottomMapToolBarMapPreview.swift */; };
+		5234E3762AC623E900927178 /* BottomMapToolBarRecording.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5234E3752AC623E900927178 /* BottomMapToolBarRecording.swift */; };
+		5272BBF52AC386C500D25367 /* Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5272BBF42AC386C500D25367 /* Version.swift */; };
+		5272BBF72AC3872700D25367 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5272BBF62AC3872700D25367 /* AppCoordinator.swift */; };
+		5272BBF92AC3875800D25367 /* GPXRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5272BBF82AC3875800D25367 /* GPXRecorder.swift */; };
+		5272BBFB2AC3894F00D25367 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5272BBFA2AC3894F00D25367 /* LocationService.swift */; };
+		5272BBFD2AC38A4300D25367 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5272BBFC2AC38A4300D25367 /* MapView.swift */; };
+		5272BBFF2AC38B1400D25367 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5272BBFE2AC38B1400D25367 /* MapViewModel.swift */; };
+		5272BC012AC397C500D25367 /* BottomMapToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5272BC002AC397C500D25367 /* BottomMapToolBar.swift */; };
+		5272BC032AC39E3200D25367 /* FileItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5272BC022AC39E3200D25367 /* FileItem.swift */; };
+		5272BC052AC39E8400D25367 /* FileBrowserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5272BC042AC39E8400D25367 /* FileBrowserViewModel.swift */; };
+		5272BC072AC39EC800D25367 /* FileBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5272BC062AC39EC800D25367 /* FileBrowser.swift */; };
+		52CD85F22AC3831400396C5B /* GPX_CreatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CD85F12AC3831400396C5B /* GPX_CreatorApp.swift */; };
+		52CD85F42AC3831400396C5B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CD85F32AC3831400396C5B /* MainView.swift */; };
+		52CD85F62AC3831600396C5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52CD85F52AC3831600396C5B /* Assets.xcassets */; };
+		52CD85F92AC3831600396C5B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52CD85F82AC3831600396C5B /* Preview Assets.xcassets */; };
+		52CD86032AC3831600396C5B /* GPX_CreatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CD86022AC3831600396C5B /* GPX_CreatorTests.swift */; };
+		52CD860D2AC3831600396C5B /* GPX_CreatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CD860C2AC3831600396C5B /* GPX_CreatorUITests.swift */; };
+		52CD860F2AC3831600396C5B /* GPX_CreatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CD860E2AC3831600396C5B /* GPX_CreatorUITestsLaunchTests.swift */; };
+		52CD86242AC384FC00396C5B /* CoreGPX in Frameworks */ = {isa = PBXBuildFile; productRef = 52CD86232AC384FC00396C5B /* CoreGPX */; };
+		52EAFEDD2ACF545500DC3556 /* GPXRecorderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EAFEDC2ACF545500DC3556 /* GPXRecorderProtocol.swift */; };
+		52EAFEDF2ACF556C00DC3556 /* LocationServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EAFEDE2ACF556C00DC3556 /* LocationServiceProtocol.swift */; };
+		52EAFEE12ACF573B00DC3556 /* AppCoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EAFEE02ACF573B00DC3556 /* AppCoordinatorProtocol.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		52CD85FF2AC3831600396C5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52CD85E62AC3831400396C5B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52CD85ED2AC3831400396C5B;
+			remoteInfo = "GPX Creator";
+		};
+		52CD86092AC3831600396C5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52CD85E62AC3831400396C5B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52CD85ED2AC3831400396C5B;
+			remoteInfo = "GPX Creator";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5217F1F12AC6D96000F1A258 /* HCMatrixObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCMatrixObject.swift; sourceTree = "<group>"; };
+		5217F1F22AC6D96000F1A258 /* HCKalmanAlgorithm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCKalmanAlgorithm.swift; sourceTree = "<group>"; };
+		5217F1F92AC75A5000F1A258 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		5217F1FB2AC75E8500F1A258 /* DetectOrientatuib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectOrientatuib.swift; sourceTree = "<group>"; };
+		5217F1FD2AC75EB200F1A258 /* UIView+Orientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Orientation.swift"; sourceTree = "<group>"; };
+		5217F2002AC76CB400F1A258 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		5217F2022AC7731200F1A258 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		5217F2042AC784DD00F1A258 /* MapStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapStyle.swift; sourceTree = "<group>"; };
+		5234E3702AC5DBF000927178 /* LocationInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInfo.swift; sourceTree = "<group>"; };
+		5234E3732AC620D100927178 /* BottomMapToolBarMapPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomMapToolBarMapPreview.swift; sourceTree = "<group>"; };
+		5234E3752AC623E900927178 /* BottomMapToolBarRecording.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomMapToolBarRecording.swift; sourceTree = "<group>"; };
+		5272BBF42AC386C500D25367 /* Version.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Version.swift; sourceTree = "<group>"; };
+		5272BBF62AC3872700D25367 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		5272BBF82AC3875800D25367 /* GPXRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPXRecorder.swift; sourceTree = "<group>"; };
+		5272BBFA2AC3894F00D25367 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		5272BBFC2AC38A4300D25367 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		5272BBFE2AC38B1400D25367 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		5272BC002AC397C500D25367 /* BottomMapToolBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomMapToolBar.swift; sourceTree = "<group>"; };
+		5272BC022AC39E3200D25367 /* FileItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileItem.swift; sourceTree = "<group>"; };
+		5272BC042AC39E8400D25367 /* FileBrowserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileBrowserViewModel.swift; sourceTree = "<group>"; };
+		5272BC062AC39EC800D25367 /* FileBrowser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileBrowser.swift; sourceTree = "<group>"; };
+		52CD85EE2AC3831400396C5B /* GPX Creator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GPX Creator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		52CD85F12AC3831400396C5B /* GPX_CreatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPX_CreatorApp.swift; sourceTree = "<group>"; };
+		52CD85F32AC3831400396C5B /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		52CD85F52AC3831600396C5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		52CD85F82AC3831600396C5B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		52CD85FE2AC3831600396C5B /* GPX CreatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GPX CreatorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		52CD86022AC3831600396C5B /* GPX_CreatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPX_CreatorTests.swift; sourceTree = "<group>"; };
+		52CD86082AC3831600396C5B /* GPX CreatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GPX CreatorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		52CD860C2AC3831600396C5B /* GPX_CreatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPX_CreatorUITests.swift; sourceTree = "<group>"; };
+		52CD860E2AC3831600396C5B /* GPX_CreatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPX_CreatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		52CD86212AC3848800396C5B /* GPX-Creator-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GPX-Creator-Info.plist"; sourceTree = SOURCE_ROOT; };
+		52EAFEDC2ACF545500DC3556 /* GPXRecorderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPXRecorderProtocol.swift; sourceTree = "<group>"; };
+		52EAFEDE2ACF556C00DC3556 /* LocationServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationServiceProtocol.swift; sourceTree = "<group>"; };
+		52EAFEE02ACF573B00DC3556 /* AppCoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinatorProtocol.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		52CD85EB2AC3831400396C5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52CD86242AC384FC00396C5B /* CoreGPX in Frameworks */,
+				5217F1F72AC6D9C200F1A258 /* Surge in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52CD85FB2AC3831600396C5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52CD86052AC3831600396C5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5217F1F02AC6D93900F1A258 /* KalmanFilter */ = {
+			isa = PBXGroup;
+			children = (
+				5217F1F22AC6D96000F1A258 /* HCKalmanAlgorithm.swift */,
+				5217F1F12AC6D96000F1A258 /* HCMatrixObject.swift */,
+			);
+			path = KalmanFilter;
+			sourceTree = "<group>";
+		};
+		5217F1F82AC75A3000F1A258 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				5217F1F92AC75A5000F1A258 /* Settings.swift */,
+				5217F2022AC7731200F1A258 /* SettingsViewModel.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		5217F1FF2AC76C9E00F1A258 /* AppSettings */ = {
+			isa = PBXGroup;
+			children = (
+				5217F2002AC76CB400F1A258 /* AppSettings.swift */,
+			);
+			path = AppSettings;
+			sourceTree = "<group>";
+		};
+		5234E3722AC5DC0000927178 /* LocationInfo */ = {
+			isa = PBXGroup;
+			children = (
+				5234E3702AC5DBF000927178 /* LocationInfo.swift */,
+			);
+			path = LocationInfo;
+			sourceTree = "<group>";
+		};
+		5272BBF32AC386A400D25367 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5272BBF42AC386C500D25367 /* Version.swift */,
+				5217F1FB2AC75E8500F1A258 /* DetectOrientatuib.swift */,
+				5217F1FD2AC75EB200F1A258 /* UIView+Orientation.swift */,
+				5217F2042AC784DD00F1A258 /* MapStyle.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		52CD85E52AC3831400396C5B = {
+			isa = PBXGroup;
+			children = (
+				52CD85F02AC3831400396C5B /* GPX Creator */,
+				52CD86012AC3831600396C5B /* GPX CreatorTests */,
+				52CD860B2AC3831600396C5B /* GPX CreatorUITests */,
+				52CD85EF2AC3831400396C5B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		52CD85EF2AC3831400396C5B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52CD85EE2AC3831400396C5B /* GPX Creator.app */,
+				52CD85FE2AC3831600396C5B /* GPX CreatorTests.xctest */,
+				52CD86082AC3831600396C5B /* GPX CreatorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		52CD85F02AC3831400396C5B /* GPX Creator */ = {
+			isa = PBXGroup;
+			children = (
+				5272BBF32AC386A400D25367 /* Utils */,
+				52CD86212AC3848800396C5B /* GPX-Creator-Info.plist */,
+				52CD85F12AC3831400396C5B /* GPX_CreatorApp.swift */,
+				52CD86202AC383E700396C5B /* Services */,
+				52CD861C2AC3836100396C5B /* Coordinator */,
+				52CD861B2AC3834D00396C5B /* Views */,
+				52CD85F52AC3831600396C5B /* Assets.xcassets */,
+				52CD85F72AC3831600396C5B /* Preview Content */,
+			);
+			path = "GPX Creator";
+			sourceTree = "<group>";
+		};
+		52CD85F72AC3831600396C5B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				52CD85F82AC3831600396C5B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		52CD86012AC3831600396C5B /* GPX CreatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				52CD86022AC3831600396C5B /* GPX_CreatorTests.swift */,
+			);
+			path = "GPX CreatorTests";
+			sourceTree = "<group>";
+		};
+		52CD860B2AC3831600396C5B /* GPX CreatorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				52CD860C2AC3831600396C5B /* GPX_CreatorUITests.swift */,
+				52CD860E2AC3831600396C5B /* GPX_CreatorUITestsLaunchTests.swift */,
+			);
+			path = "GPX CreatorUITests";
+			sourceTree = "<group>";
+		};
+		52CD861B2AC3834D00396C5B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5234E3722AC5DC0000927178 /* LocationInfo */,
+				52CD861F2AC383A700396C5B /* ToolBar */,
+				5217F1F82AC75A3000F1A258 /* Settings */,
+				52CD861E2AC3838E00396C5B /* FileBrowser */,
+				52CD861D2AC3838600396C5B /* Map */,
+				52CD85F32AC3831400396C5B /* MainView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		52CD861C2AC3836100396C5B /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				5272BBF62AC3872700D25367 /* AppCoordinator.swift */,
+				52EAFEE02ACF573B00DC3556 /* AppCoordinatorProtocol.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		52CD861D2AC3838600396C5B /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				5272BBFC2AC38A4300D25367 /* MapView.swift */,
+				5272BBFE2AC38B1400D25367 /* MapViewModel.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		52CD861E2AC3838E00396C5B /* FileBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				5272BC022AC39E3200D25367 /* FileItem.swift */,
+				5272BC042AC39E8400D25367 /* FileBrowserViewModel.swift */,
+				5272BC062AC39EC800D25367 /* FileBrowser.swift */,
+			);
+			path = FileBrowser;
+			sourceTree = "<group>";
+		};
+		52CD861F2AC383A700396C5B /* ToolBar */ = {
+			isa = PBXGroup;
+			children = (
+				5272BC002AC397C500D25367 /* BottomMapToolBar.swift */,
+				5234E3732AC620D100927178 /* BottomMapToolBarMapPreview.swift */,
+				5234E3752AC623E900927178 /* BottomMapToolBarRecording.swift */,
+			);
+			path = ToolBar;
+			sourceTree = "<group>";
+		};
+		52CD86202AC383E700396C5B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5217F1FF2AC76C9E00F1A258 /* AppSettings */,
+				5217F1F02AC6D93900F1A258 /* KalmanFilter */,
+				52EAFEDC2ACF545500DC3556 /* GPXRecorderProtocol.swift */,
+				5272BBF82AC3875800D25367 /* GPXRecorder.swift */,
+				52EAFEDE2ACF556C00DC3556 /* LocationServiceProtocol.swift */,
+				5272BBFA2AC3894F00D25367 /* LocationService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		52CD85ED2AC3831400396C5B /* GPX Creator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52CD86122AC3831600396C5B /* Build configuration list for PBXNativeTarget "GPX Creator" */;
+			buildPhases = (
+				52CD85EA2AC3831400396C5B /* Sources */,
+				52CD85EB2AC3831400396C5B /* Frameworks */,
+				52CD85EC2AC3831400396C5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GPX Creator";
+			packageProductDependencies = (
+				52CD86232AC384FC00396C5B /* CoreGPX */,
+				5217F1F62AC6D9C200F1A258 /* Surge */,
+			);
+			productName = "GPX Creator";
+			productReference = 52CD85EE2AC3831400396C5B /* GPX Creator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		52CD85FD2AC3831600396C5B /* GPX CreatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52CD86152AC3831600396C5B /* Build configuration list for PBXNativeTarget "GPX CreatorTests" */;
+			buildPhases = (
+				52CD85FA2AC3831600396C5B /* Sources */,
+				52CD85FB2AC3831600396C5B /* Frameworks */,
+				52CD85FC2AC3831600396C5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52CD86002AC3831600396C5B /* PBXTargetDependency */,
+			);
+			name = "GPX CreatorTests";
+			productName = "GPX CreatorTests";
+			productReference = 52CD85FE2AC3831600396C5B /* GPX CreatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		52CD86072AC3831600396C5B /* GPX CreatorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52CD86182AC3831600396C5B /* Build configuration list for PBXNativeTarget "GPX CreatorUITests" */;
+			buildPhases = (
+				52CD86042AC3831600396C5B /* Sources */,
+				52CD86052AC3831600396C5B /* Frameworks */,
+				52CD86062AC3831600396C5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52CD860A2AC3831600396C5B /* PBXTargetDependency */,
+			);
+			name = "GPX CreatorUITests";
+			productName = "GPX CreatorUITests";
+			productReference = 52CD86082AC3831600396C5B /* GPX CreatorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		52CD85E62AC3831400396C5B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					52CD85ED2AC3831400396C5B = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					52CD85FD2AC3831600396C5B = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 52CD85ED2AC3831400396C5B;
+					};
+					52CD86072AC3831600396C5B = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 52CD85ED2AC3831400396C5B;
+					};
+				};
+			};
+			buildConfigurationList = 52CD85E92AC3831400396C5B /* Build configuration list for PBXProject "GPX Creator" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 52CD85E52AC3831400396C5B;
+			packageReferences = (
+				52CD86222AC384FC00396C5B /* XCRemoteSwiftPackageReference "CoreGPX" */,
+				5217F1F52AC6D9C200F1A258 /* XCRemoteSwiftPackageReference "Surge" */,
+			);
+			productRefGroup = 52CD85EF2AC3831400396C5B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				52CD85ED2AC3831400396C5B /* GPX Creator */,
+				52CD85FD2AC3831600396C5B /* GPX CreatorTests */,
+				52CD86072AC3831600396C5B /* GPX CreatorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		52CD85EC2AC3831400396C5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52CD85F92AC3831600396C5B /* Preview Assets.xcassets in Resources */,
+				52CD85F62AC3831600396C5B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52CD85FC2AC3831600396C5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52CD86062AC3831600396C5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		52CD85EA2AC3831400396C5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5272BBFD2AC38A4300D25367 /* MapView.swift in Sources */,
+				5272BBF92AC3875800D25367 /* GPXRecorder.swift in Sources */,
+				5217F2012AC76CB400F1A258 /* AppSettings.swift in Sources */,
+				52EAFEDD2ACF545500DC3556 /* GPXRecorderProtocol.swift in Sources */,
+				52EAFEDF2ACF556C00DC3556 /* LocationServiceProtocol.swift in Sources */,
+				5272BBF72AC3872700D25367 /* AppCoordinator.swift in Sources */,
+				5217F1FE2AC75EB200F1A258 /* UIView+Orientation.swift in Sources */,
+				5217F1FC2AC75E8500F1A258 /* DetectOrientatuib.swift in Sources */,
+				52CD85F42AC3831400396C5B /* MainView.swift in Sources */,
+				5234E3742AC620D100927178 /* BottomMapToolBarMapPreview.swift in Sources */,
+				5217F1F42AC6D96100F1A258 /* HCKalmanAlgorithm.swift in Sources */,
+				5217F1FA2AC75A5000F1A258 /* Settings.swift in Sources */,
+				5272BC072AC39EC800D25367 /* FileBrowser.swift in Sources */,
+				5217F1F32AC6D96100F1A258 /* HCMatrixObject.swift in Sources */,
+				52EAFEE12ACF573B00DC3556 /* AppCoordinatorProtocol.swift in Sources */,
+				5272BBF52AC386C500D25367 /* Version.swift in Sources */,
+				5272BC052AC39E8400D25367 /* FileBrowserViewModel.swift in Sources */,
+				5272BBFB2AC3894F00D25367 /* LocationService.swift in Sources */,
+				5272BC032AC39E3200D25367 /* FileItem.swift in Sources */,
+				5272BC012AC397C500D25367 /* BottomMapToolBar.swift in Sources */,
+				5234E3712AC5DBF000927178 /* LocationInfo.swift in Sources */,
+				5217F2052AC784DD00F1A258 /* MapStyle.swift in Sources */,
+				5234E3762AC623E900927178 /* BottomMapToolBarRecording.swift in Sources */,
+				5217F2032AC7731200F1A258 /* SettingsViewModel.swift in Sources */,
+				52CD85F22AC3831400396C5B /* GPX_CreatorApp.swift in Sources */,
+				5272BBFF2AC38B1400D25367 /* MapViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52CD85FA2AC3831600396C5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52CD86032AC3831600396C5B /* GPX_CreatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52CD86042AC3831600396C5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52CD860D2AC3831600396C5B /* GPX_CreatorUITests.swift in Sources */,
+				52CD860F2AC3831600396C5B /* GPX_CreatorUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		52CD86002AC3831600396C5B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52CD85ED2AC3831400396C5B /* GPX Creator */;
+			targetProxy = 52CD85FF2AC3831600396C5B /* PBXContainerItemProxy */;
+		};
+		52CD860A2AC3831600396C5B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52CD85ED2AC3831400396C5B /* GPX Creator */;
+			targetProxy = 52CD86092AC3831600396C5B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		52CD86102AC3831600396C5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		52CD86112AC3831600396C5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		52CD86132AC3831600396C5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GPX Creator/Preview Content\"";
+				DEVELOPMENT_TEAM = 7UN9Y432PM;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "GPX-Creator-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Location usage";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Location usage";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Location usage";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportsDocumentBrowser = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mgulda.GPX-Creator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		52CD86142AC3831600396C5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GPX Creator/Preview Content\"";
+				DEVELOPMENT_TEAM = 7UN9Y432PM;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "GPX-Creator-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Location usage";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Location usage";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Location usage";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportsDocumentBrowser = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mgulda.GPX-Creator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		52CD86162AC3831600396C5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7UN9Y432PM;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mgulda.GPX-CreatorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GPX Creator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GPX Creator";
+			};
+			name = Debug;
+		};
+		52CD86172AC3831600396C5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7UN9Y432PM;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mgulda.GPX-CreatorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GPX Creator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GPX Creator";
+			};
+			name = Release;
+		};
+		52CD86192AC3831600396C5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7UN9Y432PM;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mgulda.GPX-CreatorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "GPX Creator";
+			};
+			name = Debug;
+		};
+		52CD861A2AC3831600396C5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7UN9Y432PM;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mgulda.GPX-CreatorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "GPX Creator";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		52CD85E92AC3831400396C5B /* Build configuration list for PBXProject "GPX Creator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52CD86102AC3831600396C5B /* Debug */,
+				52CD86112AC3831600396C5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52CD86122AC3831600396C5B /* Build configuration list for PBXNativeTarget "GPX Creator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52CD86132AC3831600396C5B /* Debug */,
+				52CD86142AC3831600396C5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52CD86152AC3831600396C5B /* Build configuration list for PBXNativeTarget "GPX CreatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52CD86162AC3831600396C5B /* Debug */,
+				52CD86172AC3831600396C5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52CD86182AC3831600396C5B /* Build configuration list for PBXNativeTarget "GPX CreatorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52CD86192AC3831600396C5B /* Debug */,
+				52CD861A2AC3831600396C5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5217F1F52AC6D9C200F1A258 /* XCRemoteSwiftPackageReference "Surge" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Jounce/Surge";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.3.2;
+			};
+		};
+		52CD86222AC384FC00396C5B /* XCRemoteSwiftPackageReference "CoreGPX" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/vincentneo/CoreGPX";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5217F1F62AC6D9C200F1A258 /* Surge */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5217F1F52AC6D9C200F1A258 /* XCRemoteSwiftPackageReference "Surge" */;
+			productName = Surge;
+		};
+		52CD86232AC384FC00396C5B /* CoreGPX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 52CD86222AC384FC00396C5B /* XCRemoteSwiftPackageReference "CoreGPX" */;
+			productName = CoreGPX;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 52CD85E62AC3831400396C5B /* Project object */;
+}
